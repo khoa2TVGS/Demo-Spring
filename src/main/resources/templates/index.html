@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skibibe Music</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="skibibeMusic.png"
+      type="/project/workspace/skibibeMusic.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar Navigation -->
+      <nav class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-headphones"></i>
+          <span>Skibibe Music</span>
+        </div>
+        <ul class="nav-links">
+          <li class="active"><i class="fas fa-home"></i> Home</li>
+          <li><i class="fas fa-compass"></i> Explore</li>
+          <li><i class="fa-solid fa-book-open"></i> Library</li>
+          <li><i class="fas fa-search"></i> Search</li>
+        </ul>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <div class="top-content-group"> <!-- Added wrapper div -->
+          <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Searchs songs, albums, artists, podcast,..."
+          />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="account-section">
+          <div class="log-in">
+            <a href="login.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit"
+              >Log In</a
+            >
+          </div>
+          <div class="sign-up">
+            <a href="signup.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit"
+              >Sign Up</a
+            >
+          </div>
+          <img
+            src="https://media.tenor.com/SWGK-CCmyE4AAAAe/gojo-mewing.png"
+            alt="User Avatar"
+            class="user-avatar"
+          />
+        </div>
+        <div class="category-container">
+          <button class="chip-scroll-btn left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="category-chips">
+            <div class="chip">Relax</div>
+            <div class="chip">Happy</div>
+            <div class="chip">Workout</div>
+            <div class="chip">Energize</div>
+            <div class="chip">Party</div>
+            <div class="chip">Romance</div>
+            <div class="chip">Commute</div>
+            <div class="chip">Sad</div>
+            <div class="chip">Focus</div>
+            <div class="chip">Sleep</div>
+          </div>
+          <button class="chip-scroll-btn right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div> <!-- Closing wrapper div -->
+        <h2>Recommended for you</h2>
+        <div class="music-grid">
+          <!-- Music Cards -->
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273101082d6318363adbc051e85"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>友達のうた</h3>
+            <p>Yoeko Kurahashi</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b27393a3afb26b889de97b001a98"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>Bắc Bling (Bắc Ninh)</h3>
+            <p>Hòa Minzy, NSUT Xuân Hinh & Tuấn Cry</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273a0aea3805ed6a87aa394c796"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>Perfect</h3>
+            <p>Ed Sheeran</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273bd6595d3c6034e06618b99a2"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>masshiro (pure white)</h3>
+            <p>Fujii Kaze</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273ed0482682d7a53c79580a892"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>Line Without a Hook</h3>
+            <p>Ricky Montgomery</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273f3f7d2ea2ad435b57d6697df"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>Glimpse of Us</h3>
+            <p>Joji</p>
+          </div>
+        </div>
+
+        <!--Quick picks-->
+        <div style="margin-top: 20px; margin-bottom: 20px">
+          <h2>Quick Picks</h2>
+        </div>
+        <div class="quickpicks-grid">
+          <div class="quickpicks-card">
+            <img src="https://picsum.photos/seed/1/200" alt="If I Were a Boy" />
+            <div class="quickpicks-card-info">
+              <div class="quickpicks-song-title">If I Were a Boy</div>
+              <div class="quickpicks-song-artist">Beyoncé</div>
+            </div>
+          </div>
+          <div class="quickpicks-card">
+            <img
+              src="https://picsum.photos/seed/2/200"
+              alt="I Wanna Be Yours"
+            />
+            <div class="quickpicks-card-info">
+              <div class="quickpicks-song-title">I Wanna Be Yours</div>
+              <div class="quickpicks-song-artist">Arctic Monkeys</div>
+            </div>
+          </div>
+          <div class="quickpicks-card">
+            <img src="https://picsum.photos/seed/3/200" alt="WILDFLOWER" />
+            <div class="quickpicks-card-info">
+              <div class="quickpicks-song-title">WILDFLOWER</div>
+              <div class="quickpicks-song-artist">Billie Eilish</div>
+            </div>
+          </div>
+          <div class="quickpicks-card">
+            <img src="https://picsum.photos/seed/4/200" alt="Photograph" />
+            <div class="quickpicks-card-info">
+              <div class="quickpicks-song-title">Photograph</div>
+              <div class="quickpicks-song-artist">Ed Sheeran</div>
+            </div>
+          </div>
+
+          <div class="quickpicks-card">
+            <img
+              src="https://picsum.photos/seed/5/200"
+              alt="Please Please Please"
+            />
+            <div class="quickpicks-card-info">
+              <div class="quickpicks-song-title">Please Please Please</div>
+              <div class="quickpicks-song-artist">Sabrina Carpenter</div>
+            </div>
+          </div>
+          <div class="quickpicks-card">
+            <img src="https://picsum.photos/seed/6/200" alt="Sunflower" />
+            <div class="quickpicks-card-info">
+              <div class="quickpicks-song-title">Sunflower</div>
+              <div class="quickpicks-song-artist">Post Malone & Swae Lee</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 20px; margin-bottom: 20px">Popular Artists</h2>
+        <div class="music-grid">
+          <!-- Artist Cards -->
+          <div class="artist-card">
+            <div class="artist-thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5ebcb4ae963f0c01900f3e17712"
+                alt="Album Cover"
+              />
+            </div>
+            <h3>KSI</h3>
+            <p>Artist</p>
+          </div>
+          <div class="artist-card">
+            <div class="artist-thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/c-Z7mIlntSpG6VyQ5ZqaPggqkZRhaySr-H5ZEazFN2iR1pP4eD1UGekwu0y--c4CSVhJJ1A4QT8=s900-c-k-c0x00ffffff-no-rj"
+                alt="Album Cover"
+              />
+            </div>
+            <h3>Sơn Tùng M-TP</h3>
+            <p>Artist</p>
+          </div>
+          <div class="artist-card">
+            <div class="artist-thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5eb91d2d39877c13427a2651af5"
+                alt="Album Cover"
+              />
+            </div>
+            <h3>Đen</h3>
+            <p>Artist</p>
+          </div>
+          <div class="artist-card">
+            <div class="artist-thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5eb46d0db8a86fda630ec12401f"
+                alt="Album Cover"
+              />
+            </div>
+            <h3>Måneskin</h3>
+            <p>Artist</p>
+          </div>
+          <div class="artist-card">
+            <div class="artist-thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5ebce33386a81a202e149934ec1"
+                alt="Album Cover"
+              />
+            </div>
+            <h3>JVKE</h3>
+            <p>Artist</p>
+          </div>
+          <div class="artist-card">
+            <div class="artist-thumbnail">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5ebb6e409f6c3d8b08a2f52072e"
+                alt="Album Cover"
+              />
+            </div>
+            <h3>Vaundy</h3>
+            <p>Artist</p>
+          </div>
+        </div>
+
+        <!--Albums-->
+        <h2 style="margin-top: 20px; margin-bottom: 20px">
+          Trending community playlists
+        </h2>
+        <div class="music-grid">
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/KCvvEFMf9vP2BedLwnVCf35dQ9MiOps4b6wQGdfm6gCbGbVkJmWYcZzlnacfXa9nLM502qaNFKvU=s1200"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>NHẠC SẾN 2025</h3>
+            <p>Sự Kiện Hoài Nam</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/S-MwArz3z_VhQsFptb39R1kD5KLouZaEo1bGuED13sevH_urZkkrJb8i59jRTBBhV6rjyxAbKbuq=s1200"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>chill jams</h3>
+            <p>Jonathan Rodriguez</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/QSLEpsk6AFN0-jHA3lyiGFDX9n3_iKeKcBNvjzn91nE1UncMxBp92ykFVrxA7eG-Z5-OuBNvoNzK=s1200"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>List nhạc yêu thích 2024</h3>
+            <p>Ninh Nguyễn</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/PYO06-zyF3-OfdNXYBfq7MFR3UrVoO18_KrriuB9dTl0BPD1N3h7Vj2agcW1yYQLRh1lQ63OhlY=s1200"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>운동</h3>
+            <p>Suxy TV</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/LZ4g6cDtgq75HDyRrpuCg6GslyaKJtyiCrqNM7CmIce4hX0jW7D4RgmxRkjGnmQy-14n_LOJCQ=s1200"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>drum</h3>
+            <p>돼찌지개</p>
+          </div>
+          <div class="music-card">
+            <div class="thumbnail">
+              <img
+                src="https://yt3.googleusercontent.com/A0w71PZvzkR8S0WtOaL4TjMVYlgHvlhp-JGjw_i5O_ixDP0vjiGfzJhFJkdAikF56fIlGmUUNh0=s1200"
+                alt="Album Cover"
+              />
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <h3>Nhạc quầy kite</h3>
+            <p>Thục Nguyễn Viết</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Player Bar -->
+      <div class="player-bar">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="now-playing">
+          <img
+            src="https://media.tenor.com/Sb0yPHMgNaUAAAAj/music-disc.gif"
+            alt="Current Track"
+          />
+          <div class="track-info">
+            <h4>Currently Playing</h4>
+            <p>Artist Name</p>
+          </div>
+        </div>
+        <div class="player-controls">
+          <button class="shuffle-btn"><i class="fas fa-random"></i></button>
+          <button><i class="fas fa-step-backward"></i></button>
+          <button class="play-pause"><i class="fas fa-play"></i></button>
+          <button><i class="fas fa-step-forward"></i></button>
+          <button class="repeat-btn"><i class="fas fa-redo"></i></button>
+        </div>
+        <div class="volume-controls">
+          <i class="fas fa-volume-up"></i>
+          <div class="volume-slider">
+            <div class="volume-progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
